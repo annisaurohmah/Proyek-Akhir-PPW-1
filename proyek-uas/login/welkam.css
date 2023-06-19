@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&family=Poppins&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-image: repeating-linear-gradient(#3e1f475d, #0b525b61,#3e1f475d );
+    min-height: 100vh;
+}
+.navbar {
+    background: #E2E3E5 ;
+    color: white;
+    height: fit-content;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    gap: 15px;
+    background-image: linear-gradient(#3E1F47, #0B525B);
+    outline-offset: -3px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+  }
+  
+  .button .text {
+    color:  white;
+    font-weight: 700;
+    font-size: 1em;
+    transition: 400ms;
+  }
+.button:hover {
+    background-image: none;
+    outline: 3px #3E1F47 solid;
+  }
+  
+.button:hover .text {
+    color: #3E1F47;
+  }
+p.text{
+    margin-bottom: 0;
+}
+.first{
+    min-height: 70vh;
+    background-image: repeating-linear-gradient(-55deg, #3e1f47b1, #0b525bc2, #3e1f47b1);;
+}
+
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+
+  }
+  
+  .cards .red {
+    background-color: #3E1F47;
+  }
+  
+  .cards .blue {
+    background-color: #06275f;
+  }
+  
+  .cards .green {
+    background-color: #0B525B;
+  }
+  
+  .cards .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100px;
+    width: 250px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 400ms;
+  }
+  
+  .cards .card p.tip {
+    font-size: 1em;
+    font-weight: 700;
+    margin: 10px;
+  }
+  .fa{
+    margin-top: 10px;
+  }
+  .cards .card p.second-text {
+    font-size: .7em;
+  }
+  
+  .cards .card:hover {
+    transform: scale(1.1, 1.1);
+  }
+  
+  .cards:hover > .card:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9, 0.9);
+  }
+  .box{
+    text-align: center;
+    color: #3E1F47;
+    box-sizing: border-box;
+    border: solid #3E1F47 1px;
+    box-shadow: grey 1px 1px 5px 1px;
+    border-radius: 15px;
+    width: 100%;
+    padding: 20px;
+    max-width: 300px;
+}
+
+.menu{
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+}
+.container-fluid {
+    padding: 40px 40px 40px 40px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
